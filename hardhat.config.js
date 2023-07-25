@@ -37,7 +37,7 @@ function getMnemonic(networkName) {
 }
 
 function accounts(chainKey) {
-  return { mnemonic: getMnemonic(chainKey) }
+  return [process.env.PRIVATE_KEY]
 }
 
 // You need to export an object to set up your config
