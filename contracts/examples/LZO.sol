@@ -9,21 +9,8 @@ import "@openzeppelin/contracts/utils/Strings.sol";
 
 
 contract LZO is UniversalONFT721 {
+    mapping (uint256 => uint256) imageIndex;
     constructor(uint256 _minGasToStore, address _layerZeroEndpoint, uint _startMintId, uint _endMintId) UniversalONFT721("LayerZeroOsawari", "LZO", _minGasToStore, _layerZeroEndpoint, _startMintId, _endMintId) {}
-
-    function generateSVG(uint256 tokenId) public view returns(string memory) {
-        bytes memory svg = abi.encodePacked(
-            '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 350">',
-            '<text y="30">', "ChainID: ", Strings.toString(lzEndpoint.getChainId()), '</text>',
-            '</svg>'
-        );
-        return string(
-            abi.encodePacked(
-                "data:image/svg+xml;base64,",
-                Base64.encode(svg)
-            )    
-        );
-    }
 
     function tokenURI(uint256 tokenId) public view override(ERC721) returns (string memory) {
         string memory json = Base64.encode(
@@ -33,7 +20,7 @@ contract LZO is UniversalONFT721 {
                         '{',
                         '"name": "LZO #', Strings.toString(tokenId), '",',
                         '"description": "I love LayerZero",',
-                        '"image": "', generateSVG(tokenId), '"'
+                        '"image": "https://kuripto.github.io/nft/lzo/png/', Strings.toString(imageIndex[tokenId]), '.png"'
                         '}'
                     )
                 )
