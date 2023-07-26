@@ -132,6 +132,11 @@ task("onftMint", "mint() mint ONFT", require("./onftMint"))
     .addParam("contract", "Name of contract")
 
 //
+task("lzoMint", "mint() mint ONFT", require("./lzoMint"))
+    .addParam("contract", "Name of contract")
+    .addParam("amount", "Name of contract")
+
+//
 task("ownerOf", "ownerOf(tokenId) to get the owner of a token", require("./ownerOf"))
     .addParam("contract", "Name of contract")
     .addParam("tokenId", "the tokenId of ONFT")

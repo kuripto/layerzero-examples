@@ -1,0 +1,14 @@
+{
+  "goerli": {
+    "startMintId": 101210000,
+    "endMintId": 101219999
+  },
+  "bsc-testnet": {
+    "startMintId": 101020000,
+    "endMintId": 101029999
+  },
+  "fuji": {
+    "startMintId": 101060000,
+    "endMintId": 101069999
+  }
+}
