@@ -14,6 +14,7 @@
   "optimism": "https://api-optimistic.etherscan.io/api",
   "optimism-goerli": "https://api-goerli-optimistic.etherscan.io/api",
   "goerli": "https://api-goerli.etherscan.io/api",
+  "mantle-testnet": "https://explorer.testnet.mantle.xyz/api",
 
   "aptos": "",
   "celo": "",

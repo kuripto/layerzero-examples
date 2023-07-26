@@ -10,5 +10,9 @@
   "fuji": {
     "startMintId": 101060000,
     "endMintId": 101069999
+  },
+  "mantle-testnet": {
+    "startMintId": 101810000,
+    "endMintId": 101819999
   }
 }

@@ -149,6 +149,11 @@ module.exports = {
       chainId: 5,
       accounts: accounts(),
     },
+    'mantle-testnet': {
+      url: 'https://rpc.testnet.mantle.xyz',
+      chainId: 5001,
+      accounts: accounts(),
+    },
     'bsc-testnet': {
       url: 'https://data-seed-prebsc-1-s1.binance.org:8545/',
       chainId: 97,
