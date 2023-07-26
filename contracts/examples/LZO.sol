@@ -35,7 +35,7 @@ contract LZO is ONFT721 {
         return string(abi.encodePacked("data:application/json;base64,", json));
     }
 
-    function mint(uint256 amount) external payable {
+    function mint(uint256 amount) external {
         require(nextMintId + amount <= maxMintId, "LZO: max mint limit reached");
 
         for (uint256 i = 0; i < amount; i++) {
