@@ -13,7 +13,7 @@ contract LZO is ONFT721 {
     uint256 public maxMintId;
     mapping (uint256 => uint256) imageIndex;
 
-    constructor(uint256 _minGasToStore, address _layerZeroEndpoint, uint _startMintId, uint _endMintId) ONFT721("LayerZeroOsawari", "LZO", _minGasToStore, _layerZeroEndpoint) {
+    constructor(uint256 _minGasToStore, address _layerZeroEndpoint, uint _startMintId, uint _endMintId) ONFT721("LayerZeroO", "LZO", _minGasToStore, _layerZeroEndpoint) {
         nextMintId = _startMintId;
         maxMintId = _endMintId;
     }
