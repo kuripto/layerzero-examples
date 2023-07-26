@@ -6,6 +6,7 @@ npx hardhat --network fuji deploy --tags LZO
 npx hardhat --network mantle-testnet verifyContract --contract LZO
 
 npx hardhat --network goerli verifyContract --contract LZO 
+# npx hardhat --network bsc-testnet verifyContract --contract LZO 
 npx hardhat --network mantle-testnet verifyContract --contract LZO
 
 npx hardhat --network goerli setTrustedRemote --target-network bsc-testnet --contract LZO
